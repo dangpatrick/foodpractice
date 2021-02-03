@@ -35,7 +35,7 @@ $f3->route('GET /order', function(){
 });
 
 //Define an order2 route
-$f3->route('GET /order2', function(){
+$f3->route('POST /order2', function(){
     //echo 'order 2 - practice!';
     $view = new Template();
     echo $view->render('views/form2.html');
@@ -43,7 +43,7 @@ $f3->route('GET /order2', function(){
 });
 
 //Define a summary route
-$f3->route('GET /summary', function(){
+$f3->route('POST /summary', function(){
     //echo 'summary - practice!';
     $view = new Template();
     echo $view->render('views/summary.html');
