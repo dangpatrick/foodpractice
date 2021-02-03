@@ -1,4 +1,5 @@
 <include href="views/header.html"></include>
+<div class="container">
 <h1>Food Order 2 continue..</h1>
 <!-- Created a form that uses the get method. Redirect the user
  to summary page when form is submitted (action="route")-->
@@ -7,28 +8,28 @@
         <legend>Select Condiments</legend>
         <div class='form-check'>
             <input class='form-check-input'
-                   type='checkbox' name='condiments'
+                   type='checkbox' name='condiments[]'
                    id='mayo' value='mayo' >
             <label class='form-check-label'
                    for='mayo'>mayo</label>
         </div>
         <div class='form-check'>
             <input class='form-check-input'
-                   type='checkbox' name='condiments'
+                   type='checkbox' name='condiments[]'
                    id='ketchup' value='ketchup' >
             <label class='form-check-label'
                    for='ketchup'>ketchup</label>
         </div>
         <div class='form-check'>
             <input class='form-check-input'
-                   type='checkbox' name='condiments'
+                   type='checkbox' name='condiments[]'
                    id='mustard' value='mustard' >
             <label class='form-check-label'
                    for='mustard'>mustard</label>
         </div>
         <div class='form-check'>
             <input class='form-check-input'
-                   type='checkbox' name='condiments'
+                   type='checkbox' name='condiments[]'
                    id='sriracha' value='sriracha' >
             <label class='form-check-label'
                    for='sriracha'>sriracha</label>
@@ -37,5 +38,6 @@
     <input type="submit" value="Next >>">
 
 </form>
+</div>
 </body>
 </html>

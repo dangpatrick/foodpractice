@@ -1,18 +1,21 @@
 <include href="views/header.html"></include>
 <body>
+<div class="container">
     <h1>Food Order Form Below</h1>
     <!-- Created a form that uses the get method. Redirect the user
      to order2 when form is submitted (action="route")-->
     <form method="POST" action="order2">
+        <div class="container">
         <label>What would like to order?
             <input type="text" name="food">
-        </label><br>
-
+        </label>
+        </div>
         <!-- get meal -->
         <div class="form-group">
             <label class="col-sm-2 control-label">Select a meal</label>
             <div class="col-sm-4">
-                <label><input type="radio"
+                <label>
+                    <input type="radio"
                               name="meal"
                               id="breakfast"
                               value="breakfast"> Breakfast
@@ -26,10 +29,12 @@
                               name="meal"
                               id="dinner"
                               value="dinner"> Dinner
-                    </input></label><br>
+                    </input><br>
+                </label><br>
             </div>
         </div>
         <input type="submit" value="Next >>">
     </form>
+</div>
 </body>
 </html>
