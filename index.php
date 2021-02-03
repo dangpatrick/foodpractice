@@ -44,7 +44,9 @@ $f3->route('GET /order2', function(){
 
 //Define a summary route
 $f3->route('GET /summary', function(){
-echo 'summary - practice!';
+    //echo 'summary - practice!';
+    $view = new Template();
+    echo $view->render('views/summary.html');
 
 });
 
