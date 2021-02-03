@@ -29,6 +29,23 @@ $f3->route('GET /', function(){
     echo $view->render('views/home.html');
 });
 
+//Define an order route
+$f3->route('GET /order', function(){
+    echo 'order 1 - practice!';
+});
+
+//Define an order2 route
+$f3->route('GET /order2', function(){
+    echo 'order 2 - practice!';
+
+});
+
+//Define a summary route
+$f3->route('GET /summary', function(){
+echo 'summary - practice!';
+
+});
+
 
 //Run fat free
 $f3->run();
